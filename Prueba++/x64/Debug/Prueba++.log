@@ -1,0 +1,11 @@
+﻿  Prueba++.cpp
+D:\OneDrive - Centre d'Estudis Monlau\M5 - Entornos de desarrollo\Pruebac++\Prueba++\Prueba++.cpp(134,16): warning C4552: "<=": el resultado de la expresión no se usa
+D:\OneDrive - Centre d'Estudis Monlau\M5 - Entornos de desarrollo\Pruebac++\Prueba++\Prueba++.cpp(157,17): warning C4552: "<=": el resultado de la expresión no se usa
+D:\OneDrive - Centre d'Estudis Monlau\M5 - Entornos de desarrollo\Pruebac++\Prueba++\Prueba++.cpp(178,20): warning C4552: "<=": el resultado de la expresión no se usa
+D:\OneDrive - Centre d'Estudis Monlau\M5 - Entornos de desarrollo\Pruebac++\Prueba++\Prueba++.cpp(204,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+D:\OneDrive - Centre d'Estudis Monlau\M5 - Entornos de desarrollo\Pruebac++\Prueba++\Prueba++.cpp(230,17): warning C4552: "<=": el resultado de la expresión no se usa
+D:\OneDrive - Centre d'Estudis Monlau\M5 - Entornos de desarrollo\Pruebac++\Prueba++\Prueba++.cpp(349,20): warning C4552: ">": el resultado de la expresión no se usa
+D:\OneDrive - Centre d'Estudis Monlau\M5 - Entornos de desarrollo\Pruebac++\Prueba++\Prueba++.cpp(582,16): warning C4552: "<=": el resultado de la expresión no se usa
+D:\OneDrive - Centre d'Estudis Monlau\M5 - Entornos de desarrollo\Pruebac++\Prueba++\Prueba++.cpp(611,19): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+D:\OneDrive - Centre d'Estudis Monlau\M5 - Entornos de desarrollo\Pruebac++\Prueba++\Prueba++.cpp(1123,24): warning C4102: 'heroIsAlive': etiqueta sin referencia
+  Prueba++.vcxproj -> D:\OneDrive - Centre d'Estudis Monlau\M5 - Entornos de desarrollo\Pruebac++\Prueba++\x64\Debug\Prueba++.exe
