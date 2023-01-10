@@ -55,19 +55,11 @@ void startGame() {
     Sleep(500);
 }
 
-
-
 //ELECCION DE ARMA 
 void selA() {
 
-    cout << "Espadon [1], Magia de la buena [2] o manotazo [3]\n";
-   
+    cout << "Espadon [1], Magia de la buena [2] o manotazo [3]\n";   
 }
-
-
-
-
-
 // ATAQUES DE HEROE
 
 int heroA() {
@@ -78,25 +70,12 @@ int heroA2() {
     return enemyTwoHp - heroDamage;
 }
 
-
-
-
 // ATAQUES DEL ENEMIGO UNO
 
-
 int enemyOne(int enemyDamage) {
-    
-    
+       
     return heroHp - enemyDamage;    
 }
-
-
-
-
-
-
-
-
 
 //ATAQUES DEL ENEMIGO DOS
 
@@ -106,21 +85,12 @@ int enemyTwo(int enemyTwoDamage) {
     return heroHp - enemyTwoDamage;
 }
 
-
-
 // ATAQUE DE LOS DOS
 
 int enemyMix(int mix) {
        
     return heroHp - mix;
 }
-
-
-
-
-
-
-
 
 
 //BOOLEANOS DE SI ESTA VIVO EL HEROE
@@ -138,13 +108,6 @@ bool herolive() {
     }
 }
 
-
-
-
-
-
-
-
 //BOOLEANOS DE SI EL ENEMIGO PAVON ESTA VIVO
 
 bool pavonLive() {
@@ -160,11 +123,6 @@ bool pavonLive() {
     }
 
 }
-
-
-
-
-
 
 //BOOLEANOS SI ENEMIGO CONEJERO ESTA VIVO
 
@@ -182,7 +140,6 @@ bool conejeroLive() {
 }
 
 
-
 int fChooseEnemy() {
     chooseEnemy = 0;
     while(chooseEnemy !=1 && chooseEnemy != 2){
@@ -195,9 +152,6 @@ int fChooseEnemy() {
     }
     return chooseEnemy;
 }
-
-
-
 
 int main()
 {
@@ -234,13 +188,8 @@ int main()
        
     }
     
-   
-
-   
-
     // Si sigue vivo la pelea continua
-    
-    
+       
     if (enemyIsAlive && heroIsAlive) {
         
         Sleep(500);
@@ -252,11 +201,8 @@ int main()
         Sleep(500);
         cout << "\n";
 
-
-
         //CONDICIONES DE VIDA
-        
-        
+       
     if (heroHp >= 1800 && (enemyIsAlive)) {
             Sleep(500);
             cout << "Buahh, golpes de insecto. Eres insignificante ante mi poder\n";
@@ -274,13 +220,6 @@ int main()
         Sleep(500);
         enemyIsAlive = pavonLive();
     }
-
-
-
-
-
-
-
 
     //Aqui entra en accion otro enemigo. Condicion de  enemigo 1 sigue vivo o enemigo 2 esta vivo
 
@@ -311,13 +250,6 @@ int main()
         cout << "Conejero salio disparado contra un muro, destrozado ya no puedo levantarse mas y cerro los ojos\n";
         Sleep(500);
     }
-
-
-
-
-
-
-
 
     // Esto solo pasa si el enemigo uno esta muerto
 
@@ -377,14 +309,6 @@ if (enemyTwoHp > 0) {
         cout << "La pelea con el debilucho acabo por fin!\n";
     }
 
-
-
-
-
-
-
-
-
     // Esto sucede si el enemigo Conejero esta muerto
 
     if (enemyTwoIsAlive == false && (heroIsAlive && enemyIsAlive)) {
@@ -421,11 +345,7 @@ if (enemyTwoHp > 0) {
         Sleep(500);
         cout << "\n";
     }
-    
-    
-    
-    
-    
+
     if (enemyTwoIsAlive == false && (enemyIsAlive)) {
         Sleep(500);
         cout << "Ahora le tocaba a Pavon contratacar. Tenia una sonrisa en su boca y parecia poseido por un saiyajin\n";
@@ -435,20 +355,11 @@ if (enemyTwoHp > 0) {
         cout << "MALDITOOOO!! Eso ha dolido. He recibido " << enemyDamage << " y me quedan estos puntos de vida " << heroHp << " \n";
         Sleep(500);
 
-
-
-
-
         // CONDICION DE VIDA DE MI HEROE MIENTRAS DURA LA PELEA CON PAVON.
 
         if (heroHp > 1500) {
             cout << " Creo que esto va a ser pan comido...\n";
         }
-
-
-
-
-
 
         // SIGUE LA PELEA CON PAVON.   EL ENEMIGO CONEJERO MUERTO
 
@@ -478,14 +389,6 @@ if (enemyTwoHp > 0) {
         cout << "Grandeeee, bien hecho! :) \n";
         Sleep(500);
     }
-
-
-
-
-
-
-
-
 
     // AQUI SI LOS DOS ENEMIGO ESTAN MUERTOS
 
@@ -530,16 +433,6 @@ if (enemyTwoHp > 0) {
         cout << "da media vuelta y con la luz del alba se marcha hacia un nuevo destino\n";
         Sleep(500);
     }
-
-
-
-
-
-
-
-
-
-
 
     // "Sino" la pelea sigue y ahora me atacan los dos a la vez
 
@@ -591,30 +484,19 @@ if (enemyTwoHp > 0) {
         Sleep(500);
     }
 
-
-
     // Vamos con la parte en que tenemos que elegir si atacar a uno o a otro
     Sleep(500);
     cout << "La pelea es cuando se pone seria de verdad\n";
     Sleep(500);
     cout << "\n";
 
-   
-    
-    
-    
-    
-    
-    
-    
     while (heroIsAlive && (enemyIsAlive && enemyTwoIsAlive)) {
         srand(time(NULL));
         enemyDamage = (100 + rand() % (150 - 100));
         enemyTwoDamage = 50 + rand() % (100 - 50);
     
 
-        // Aqui pondremos los daños aleatorios del heroe en espada,magia, y puñetazo
-       
+   // Aqui pondremos los daños aleatorios del heroe en espada,magia, y puñetazo
         
         int swDam = 75 + rand() % (140 - 75);
         int magic = 150 + rand() % (200 - 150);
@@ -635,8 +517,6 @@ if (enemyTwoHp > 0) {
             cout << "Has escogido a Pavon. Vas a tener que elegir con que quieres atacar\n";         
             Sleep(500);
 
-
-           
 
          // OTRO SWITCH PARA ELEGIR CON QUE ATACAR
 
@@ -739,12 +619,6 @@ if (enemyTwoHp > 0) {
                 Sleep(500);
                 
 
-
-
-
-
-
-
                 //Aqui pongo condiciones de vida, Si al heroe le va bajando la vida van sucediendo estas opciones
 
                 if (heroHp > 1500 && (enemyIsAlive || enemyTwoIsAlive)) {
@@ -796,8 +670,6 @@ if (enemyTwoHp > 0) {
                 }
             }
             break;
-
-
 
 
          //ESTO ESTA DENTRO DE MI SWITCH PRINCIPAL Y AQUI ELIGO AL ENEMIGO 2
@@ -920,12 +792,6 @@ case 2:
                 cout << enemyDamage << " y ahora me quedan " << heroHp << " puntos de vida\n\n";
                 Sleep(500);
                 
-
-
-
-
-
-
 
                 //Aqui pongo condiciones de vida, Si al heroe le va bajando la vida van sucediendo estas opciones
 
@@ -1090,12 +956,6 @@ case 2:
         }
 
 
-
-
-
-
-
-
         //El enemigo Conejero me ataca si pavon esta muerto
 
         if (heroIsAlive && enemyIsAlive == false && enemyTwoIsAlive == true)
@@ -1173,12 +1033,6 @@ case 2:
         }
 
 
-
-
-
-
-
-
         //ESTO OCURRE SI LOS DOS ENEMIGOS MUEREN O EL HEROE MUERE
         if (heroIsAlive && enemyIsAlive == false && enemyTwoIsAlive == false)
         {
@@ -1188,9 +1042,6 @@ case 2:
             cout << "Y hasta aqui la historia. Espero que te haya gustado querido Player\n";
             Sleep(500);
         }
-
-
-
 
 
         //ESTO OCURRE SI EL HEROE A MUERTO Y ELENEMIGO 1 TAMBIEN HA MUERTO
@@ -1203,8 +1054,6 @@ case 2:
         }
 
 
-
-
         //ESTO OCURRE SI EL HEROE ESTA MUERTO Y EL ENEMIGO 2 ESTA MUERTO
         if (heroIsAlive == false && enemyIsAlive == true && (enemyTwoIsAlive == false))
         {
@@ -1213,8 +1062,6 @@ case 2:
             cout << "Bahh es igual encontrare a otro";
             Sleep(500);
         }
-
-
 
 
 
